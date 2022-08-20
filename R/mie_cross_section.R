@@ -9,7 +9,7 @@ Csca <- function(radius, lambda, np, nm){
   an <- as.complex(coef_an(alpha, 1, m, qq))
   bn <- as.complex(coef_bn(alpha, 1, m, qq))
 
-  2 * pi * lambda^2 * sum( (2*n + 1) * (abs(an)^2 + abs(bn)^2) )
+  lambda^2 / (2 * pi) * sum( (2*n + 1) * (abs(an)^2 + abs(bn)^2) )
 
 }
 
@@ -26,7 +26,7 @@ Cext <- function(radius, lambda, np, nm){
   an <- as.complex(coef_an(alpha, 1, m, qq))
   bn <- as.complex(coef_bn(alpha, 1, m, qq))
 
-  2 * pi * lambda^2 * sum( (2*n + 1) * Re(an + bn) )
+  lambda^2 / (2 * pi) * sum( (2*n + 1) * Re(an + bn) )
 
 }
 
