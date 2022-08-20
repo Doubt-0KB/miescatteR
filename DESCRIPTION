@@ -1,0 +1,17 @@
+Package: MiescatteR
+Type: Package
+Title: Calculate Mie Scattering
+Version: 0.0.0.9000
+Authors@R: person("Doubt", "0KB", email = "doubt.pad@gmail.com", role=c("aut", "cre"))
+Description: This is a tool to calculate Mie scattering using R.
+Depends: R (>= 4.2.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Bessel,
+    data.table,
+    dplyr,
+    purrr,
+    tidyr
+RoxygenNote: 7.2.1
